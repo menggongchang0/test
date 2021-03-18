@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.utilController.dao.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.utilController.entity.SysUser">
+        <id column="ID" property="id" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="real_name" property="realName" />
+        <result column="nick_name" property="nickName" />
+        <result column="TEL" property="tel" />
+        <result column="dept_id" property="deptId" />
+        <result column="phone" property="phone" />
+        <result column="Enroll_time" property="enrollTime" />
+        <result column="Firstlogin" property="Firstlogin" />
+        <result column="salt" property="salt" />
+        <result column="email" property="email" />
+        <result column="status" property="status" />
+        <result column="sex" property="sex" />
+        <result column="deleted" property="deleted" />
+        <result column="create_id" property="createId" />
+        <result column="update_id" property="updateId" />
+        <result column="create_where" property="createWhere" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, username, password, real_name, nick_name, TEL, dept_id, phone, Enroll_time, Firstlogin, salt, email, status, sex, deleted, create_id, update_id, create_where, create_time, update_time
+    </sql>
+
+</mapper>
